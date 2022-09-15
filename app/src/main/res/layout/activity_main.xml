@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/wet"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:fontFamily="sans-serif-light"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/layoutD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-thin"
+            android:text="Main°C"
+            android:textAlignment="center"
+            android:textSize="90sp"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/detailsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="#3CF1EBF1">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:text="Humidity"
+                    android:padding="7dp"/>
+                <TextView
+                    android:id="@+id/humidityHere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text="06:40 AM"/>
+            </LinearLayout>
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="#3CF1EBF1"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:text="Country"
+                    android:padding="7dp"/>
+                <TextView
+                    android:id="@+id/country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text="06:40 AM"
+                    />
+            </LinearLayout>
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="#3CF1EBF1"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:text="Wind"
+                    android:padding="7dp"
+
+                    />
+                <TextView android:id="@+id/windHere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text="06:40 AM"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:paddingTop="10sp"
+                android:text="Details"
+                android:textSize="30dp"
+                />
+        </ScrollView>
+    </LinearLayout>
+        </LinearLayout>
+
+    <EditText
+        android:id="@+id/etNewCity"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/resetBtn"
+        android:paddingLeft="5dp"
+        android:background="@color/white"
+        android:hint="Enter City Name"
+        android:textColorHint="@color/black"
+
+        />
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        android:background="@drawable/button_design"
+        android:text="View Weather"
+        android:textColor="@color/purple_200"
+
+        />
+
+</RelativeLayout>
