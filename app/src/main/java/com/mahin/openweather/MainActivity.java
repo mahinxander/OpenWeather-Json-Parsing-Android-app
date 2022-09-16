@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         Button resetBtn=(Button) findViewById(R.id.resetBtn);
 
         Weather getData=new Weather();
-        getData.execute("https://api.openweathermap.org/data/2.5/" + "forecast?q=Dhaka&units=metric&appid=edefc762f4743a1c4daff794753cf258");
+        getData.execute("https://api.openweathermap.org/data/2.5/" + "forecast?q=Dhaka&units=metric&appid={your-token}");
 
 
 
