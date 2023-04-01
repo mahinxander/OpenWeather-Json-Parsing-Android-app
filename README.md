@@ -8,7 +8,7 @@ The <span style='color:red;'>Weather app</span> using <span style='color:red;'>j
 
 ## License
 
-This Banking App Project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This Weather App Project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ## Demo Screenshots
 
